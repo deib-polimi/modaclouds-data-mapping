@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2014 deib-polimi
+    Contact: deib-polimi <santo.lombardo@polimi.it>
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<er name="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/SAMSUNG/Desktop/4.4.1/xsd/er.xsd">
+ <entity key="A.id" name="A" id="A">
+  <attribute name="A.id"/>
+  <attribute name="A.name"/>
+ </entity>
+ <entity key="B.id" name="B" id="B">
+ <attribute name="B.id"/> 
+ </entity>
+ <entity key="C.id" name="C" id="C">
+  <attribute name="C.id"/>
+  <attribute name="C.name"/> 
+ </entity>
+ <relationship name="R1" id="R1">
+    <link minCard="1" id="A"/>
+    <link minCard="0" maxCard="1" id="B"/>  
+ </relationship> 
+ <relationship name="R1" id="R2">
+   <link minCard="1" maxCard="1" id="A"/>
+   <link minCard="0" maxCard="1" id="B"/>
+ </relationship>
+ <relationship name="R3" id="R3">
+  <link minCard="0" id="B"/>
+  <link minCard="0" id="C"/> 
+ </relationship>
+</er>

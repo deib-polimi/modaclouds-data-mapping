@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2014 deib-polimi
+    Contact: deib-polimi <santo.lombardo@polimi.it>
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<hdm id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/eclipseWS/modacloudsSVN/dmc/xsd/hdm.xsd">
+	<child id="B">
+		<attribute name="B.id"/>
+		<attribute name="B.name"/>
+		<relationship id="R1">
+			<attribute name="R1.att1"/>
+			<attribute name="R1.att2"/>
+			<child id="A">
+				<attribute name="A.id"/>
+				<attribute name="A.att1"/>
+				<relationship id="R4">
+					<child id="C"/>
+				</relationship>
+			</child>
+		</relationship>
+		<relationship id="R2">
+			<child id="A">
+				<attribute name="A.id"/>
+				<attribute name="A.att1"/>
+			</child>
+		</relationship>
+		<relationship id="R3">
+			<child id="C"/>
+		</relationship>
+	</child>
+</hdm>

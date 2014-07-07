@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hdm id="example">
+	<child id="A">
+		<attribute name="A.id"/>
+		<attribute name="A.name"/>
+		<relationship id="R1">
+			<child id="B">
+				<attribute name="B.name"/>
+				<attribute name="B.id"/>
+			</child>
+		</relationship>
+		<relationship id="R2">
+			<child id="B">
+				<attribute name="B.name"/>
+				<attribute name="B.id"/>
+				<relationship id="R3">
+					<child id="C">
+						<attribute name="C.id"/>
+						<attribute name="C.address"/>
+						<attribute name="C.cap"/>
+					</child>
+				</relationship>
+			</child>
+		</relationship>
+		<relationship id="R4">
+			<child id="C">
+				<attribute name="C.id"/>
+				<attribute name="C.address"/>
+				<attribute name="C.cap"/>
+			</child>
+		</relationship>
+	</child>
+</hdm>

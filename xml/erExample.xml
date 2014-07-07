@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2014 deib-polimi
+    Contact: deib-polimi <santo.lombardo@polimi.it>
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<er name="er1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/eclipseWS/modacloudsSVN/dmc/xsd/er.xsd">
+	<entity id="A" name="A" key="A.id">
+		<attribute name="A.id"/>
+		<attribute name="A.name"/>
+	</entity>
+	<entity id="B" name="B" key="B.id">
+		<attribute name="B.name"/>
+		<attribute name="B.id"/>
+	</entity>
+	<entity id="C" name="C" key="C.id C.cap">
+		<attribute name="C.id"/>
+		<attribute name="C.address"/>
+		<attribute name="C.cap"/>
+	</entity>
+	<relationship id="R1" name="R1">
+		<link minCard="0" maxCard="1" id="A"/>
+		<link minCard="1" id="B"/>
+	</relationship>
+	<relationship id="R2" name="R2">
+		<link minCard="0" maxCard="1" id="A"/>
+		<link minCard="1" maxCard="1" id="B"/>
+	</relationship>
+	<relationship id="R3" name="R3">
+		<link minCard="0" maxCard="1" id="B"/>
+		<link minCard="1" id="C"/>
+	</relationship>
+	<relationship id="R4" name="R4">
+		<link minCard="0" maxCard="1" id="A"/>
+		<link minCard="1" maxCard="1" id="C"/>
+	</relationship>
+</er>

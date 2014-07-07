@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><fdm name="example"><table id="A" name="A" key="A.id"><column id="A.id"/><column id="A.name"/></table><table id="B" name="B" key="B.id"><column id="B.name"/><column id="B.id"/></table><table id="C" name="C" key="C.id C.cap"><column id="C.id"/><column id="C.address"/><column id="C.cap"/></table></fdm>
