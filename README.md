@@ -1,4 +1,4 @@
-#ModaCLOUD Data Mapping tool
+#MODAClouds Data Mapping tool
 
 What is it?
 -----------
